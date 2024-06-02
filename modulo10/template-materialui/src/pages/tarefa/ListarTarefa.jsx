@@ -106,7 +106,7 @@ const ListarTarefa = () => {
                 </TableHead>
                 <TableBody>
                 {tarefas.map((row, indice) => (
-                    <TableRow
+                    <TableRow style={{backgroundColor: indice%2 === 0? '#c2c2c2' : 'white'}}
                     key={indice}
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
